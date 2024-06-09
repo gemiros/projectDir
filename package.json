@@ -1,0 +1,30 @@
+{
+  "name": "projectdir",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "./backend",
+    "./frontend",
+    "./gas"
+  ],
+  "private": true,
+  "scripts": {
+    "dev": "yarn workspace frontend run dev",
+    "build:backend": "yarn workspace backend run build",
+    "build:gas":"yarn workspace gas run build",
+    "remove:gas":"yarn workspace gas run remove",
+    "build:frontend": "yarn workspace frontend run build",
+    "build": "yarn run build:frontend && yarn run build:gas",
+    "push": "yarn run build && yarn run build:gas && clasp push && yarn run remove:gas",   
+    "push:gas":"yarn run build:gas && clasp push && yarn run remove:gas",
+    "open": "clasp open --webapp",
+    "open:push": "clasp open --webapp --deploymentId AKfycbyHD5xexgYPve2I5Q3evNosHmuRY86CWJJlmI9d3v4",
+    "open:dev": "clasp open --webapp --deploymentId AKfycbxr8lPni6fl5D8DygonPRyH_gYEcjaLRiMU4_N4grpp17r0Apz78HCYWkekrB_qNz9t",
+    "open:prod": "clasp open --webapp --deploymentId AKfycbzYMRvUv23zEpw6R3WpSQ6o57lmzZQLtqlf4zXJ07ZsfNWdXEchvjwe1Zvr",
+    "gen-dts": "yarn workspace backend run gen-dts",
+    "deploy": "clasp deploy",
+    "deploy:dev": "clasp deploy -d 開発環境 -i AKfycbxr8lPni6fl5D8DygonPRyH_gYEcjaLRiMU4_N4grpp17r0Apz78HCYWkekrB_qNz9t",
+    "deploy:prod": "clasp deploy -d 本番環境 -i AKfycbzYMRvUv23zEpw6R3WpSQ6o57lmzZQLtqlf4zXJ07ZsfNWdXEchvjwe1Zvr-iNKzv8A"
+  }
+}

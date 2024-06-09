@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vue-router": "4",
+    "vue-textarea-autosize": "^1.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-singlefile": "^2.0.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vue-tsc": "^2.0.6",
+    "vuetify": "^3.6.0-beta.0.0"
+  }
+}

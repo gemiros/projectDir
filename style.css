@@ -1,0 +1,190 @@
+#message {
+  opacity: 0;
+
+  &.is-active {
+    opacity: 1;
+  }
+}
+
+#dice {
+  width: 350px;
+}
+
+.モンスター {
+  padding-right: 10px;
+}
+
+.能力くくり {
+  margin-right: 10px;
+}
+
+h3 {
+  font-family: serif;
+  margin-right: 10px;
+}
+
+#トップ {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#種族 {
+  padding-right: 20Px;
+}
+
+#Lv {
+  padding-right: 20Px;
+}
+
+.能力 {
+  text-align: center;
+  padding: 0px 5px 2px 0px;
+}
+
+#部位一覧 {
+  text-align: center;
+}
+
+.部位 {
+  border-spacing: 0px;
+  border: 1px black solid;
+  /* max-width: 300px; */
+}
+
+#部位ヘッダー {
+  background-color: black;
+  color: white;
+}
+
+.各種部位 td {
+  border: 1px black solid;
+}
+
+.部位右外 {
+  border-right: none;
+  padding: 3px 10px 3px 10px;
+}
+
+.部位左外 {
+  border-right: 1px white solid;
+  padding: 3px 10px 3px 10px;
+}
+
+.部位中 {
+  border-right: 1px white solid;
+  padding: 3px 10px 3px 10px;
+}
+
+.特殊能力 {
+  margin-bottom: 0px;
+}
+
+.能力詳細 {
+  margin-top: 0px;
+}
+
+#戦利品テーブル {
+  border-spacing: 0px;
+  border: 1px black solid;
+}
+
+#戦利品テーブル tr td {
+  border: 1px black solid;
+  padding: 0px 10px 0px 10px;
+}
+
+.戦利品出目 {
+  background-color: rgb(177, 177, 177);
+}
+
+.編集部位ヘッダー{
+  background-color: black;
+  color: white;
+}
+
+.pStatus:not(.部位名){
+  width: 3em;
+}
+
+.編集部位ヘッダーセル{
+  width: 3em;
+}
+
+.攻撃方法ヘッダーセル{
+  width: 8em;
+}
+
+.部位名{
+  width: 10em;
+}
+
+td:not(.commonStatusTd){
+  text-align: center;
+}
+
+.useLabel{
+  margin: 0 0 0 0;
+}
+
+.useKindTable{
+  border-spacing: 0px;
+  border: 1px black solid;
+}
+
+.useKindTable tr td{
+  border: 1px black solid;
+  padding: 2px;
+}
+
+#abiTableKind{
+  width: 120px;
+}
+
+#abiTableName{
+  width: 12em;
+  height: 1em;
+}
+
+#abiTableUse{
+  width: 12em;
+  height: 1em;
+}
+
+#abiTableEff{
+  width: 32em;
+  height: 1em;
+}
+
+.AbiEffectText{
+  width: 35em;
+  height: 4em;
+}
+
+.AbiInputText{
+  width: 12em;
+  height: 1em;
+}
+
+#langText{
+  min-width: 8em;
+}
+
+#言語{
+  margin: 10px 0px;
+}
+
+.langText{
+  padding-right: 20px;
+}
+
+.habiText{
+  padding-right: 20px;
+}
+
+#abiTableexplain{
+  width: 30em;
+}
+
+.AbiexplainectText{
+  width: 30em;
+}
